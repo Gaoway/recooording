@@ -1,0 +1,25 @@
+# Read more about SSH config files: https://linux.die.net/man/5/ssh_config
+Host 401
+  Port 6401
+  HostName 47.122.4.125
+  User lygao
+  #8Yy6d79xeUi++9EfWnjcWA==
+
+Host 402
+  Port 6402
+  HostName 47.122.4.125
+  User lygao
+  #8Yy6d79xeUi++9EfWnjcWA==
+
+Host 403
+  Port 6403
+  HostName 47.122.4.125
+  User lygao
+  #8Yy6d79xeUi++9EfWnjcWA==
+
+Host 407
+  Port 6407
+  HostName 47.122.4.125
+  User lygao
+  #8Yy6d79xeUi++9EfWnjcWA==
+  
