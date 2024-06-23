@@ -199,3 +199,32 @@ fae320d08268        nginx:alpine        "/docker-entrypoint.…"   24 seconds ag
 移除服务，使用 docker stack down
 
 移除数据卷请使用 docker volume rm
+
+#### docker 用户取消sudo
+创建名为docker的组，如果之前已经有该组就会报错，可以忽略这个错误：
+sudo groupadd docker
+1
+将当前用户加入组docker：
+sudo gpasswd -a ${USER} docker
+1
+重启docker服务(生产环境请慎用)：
+sudo systemctl restart docker
+1
+添加访问和执行权限：
+sudo chmod a+rw /var/run/docker.sock
+
+
+#### docker top --：查看指定容器中所有正在运行的进程
+查看所有运行容器的进程信息
+for i in  `docker ps |grep Up|awk '{print $1}'`;do echo \ &&docker top $i; done
+
+
+### 详解Docker挂载本地目录及实现文件共享
+
+譬如我要启动一个centos容器，宿主机的/test目录挂载到容器的/soft目录，可通过以下方式指定：
+`docker run -it -v /test:/soft centos /bin/bash`
+
+一、容器目录不可以为相对路径
+
+二、宿主机目录如果不存在，则会自动生成
+
