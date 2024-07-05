@@ -53,3 +53,44 @@ else
 fi
 
 ```
+
+
+### nohup的使用
+
+``` bash
+# 运行Python脚本：
+nohup python my_script.py &
+# 输出重定向：
+nohup python my_script.py > output.log 2>&1 &
+```
+
+查看后台运行的进程
+``` bash
+# 使用 ps 查看所有后台进程：
+jobs
+ps aux | grep my_script.py
+# kill 命令终止进程：
+kill -9 PID
+```
+
+
+### pdb的使用
+``` bash
+# 在脚本中插入断点：
+import pdb; pdb.set_trace()
+# 运行脚本：
+python my_script.py
+# 使用 pdb 命令：
+l
+n
+c
+q 
+```
+
+### scp 使用
+``` bash
+# 从远程主机复制文件夹到本地：
+scp -P 8407 -r username@47.122.4.125:/path/ /local/path/ 
+# 从本地复制文件到远程主机：
+scp -P 8407 -r /local/path/ username@47.122.4.125:/path/
+```
