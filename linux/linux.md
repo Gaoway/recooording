@@ -54,6 +54,11 @@ fi
 
 ```
 
+查看文件夹下各个文件夹的大小
+``` bash
+du -h --max-depth=1
+```
+
 
 ### nohup的使用
 
@@ -93,4 +98,46 @@ q
 scp -P 8407 -r username@47.122.4.125:/path/ /local/path/ 
 # 从本地复制文件到远程主机：
 scp -P 8407 -r /local/path/ username@47.122.4.125:/path/
+```
+
+
+### linux使用命令行打印文件
+参考网站：`https://www.linuxprobe.com/linux-print-manager.html`
+CUPS(Common UNIX Printing System，即通用Unix打印系统) 是一个在Linux和UNIX操作系统上实现打印功能的软件包。CUPS支持多种打印协议，包括IPP(互联网打印协议)、LPD(打印守护程序)、SMB(Windows共享打印机)等。
+
+安装CUPS
+``` bash
+sudo apt-get install cups
+sudo apt install lpr
+```
+HP驱动：
+``` bash
+sudo apt-get install hplip
+```
+启动CUPS服务
+``` bash
+sudo service cups start
+```
+打开浏览器，输入地址 `http://localhost:631/`，进入CUPS管理页面。
+
+默认使用USB连接的打印机会自动识别，如果没有识别，可以手动添加。
+`lsusb` 命令用于列出系统中所有连接的USB设备的信息。 
+
+lp命令
+``` bash   
+lp -d printer_name file_name ：打印文件
+
+lpinfo -v  :要求CUPS给出可以使用的后端列表（设备列表）
+lpinfo -m  :要求CUPS给出可以使用的驱动列表
+lpadmin -p 打印机名称 / -E -v 打印机链接 ：增加打印机并且启动打印机
+lpadmin -x 打印机名 ：删除打印机，打印机名先用lpstat -a 查看，删除后用指令确认一下
+lpoptions -d 打印机名称 ：指定默认打印机
+
+lpq -a   ：显示出目前所有打印机的工作队列情况
+lprm 打印任务id    ：删去一个打印作业
+
+lpstat -p 查看已有打印机
+lpstat -a 查看已有打印机         
+lpstat -d 查看默认打印机
+lpoptions | tr ' ' '\n' : 查看打印机的选项
 ```

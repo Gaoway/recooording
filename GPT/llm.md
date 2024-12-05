@@ -17,3 +17,10 @@ echo deb-src https://mirrors.tuna.tsinghua.edu.cn/debian-security/ buster/update
 apt update&&
 echo 换源已完成！&&
 cd /home
+
+
+## 模型系列调研
+
+
+
+## 推测解码
