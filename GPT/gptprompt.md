@@ -78,11 +78,11 @@ From a professional point of view, please enhance the following essay draft to m
 Remember the academic text polish (refine and reword) principle: 
 1. Restructure content and Revise for style the writing to meet the academic style, improve the spelling, grammar, clarity, concision and overall readability. When necessary, Significant edits and rewrites the whole sentence for better expression.
 2. the language and the writing style should be similar to that found in top USA CS academic essays, such as mobicom, TPDS, and sigcom.
-3. do NOT make some adjectives and demonstrative pronouns too frequent, and reduce the usage of "'s", 
-4. analyze the logic and coherence amongsentences within each paragraph in the following text, ldentify any areas where the flow orconnections between sentences could be improved,and provide specific suagestions toenhance the overall quality and readabllity to the content.
+3. do NOT make some same adjectives and demonstrative pronouns too frequent, and reduce the usage of "'s", 
+4. analyze the logic and coherence amongsentences within each paragraph in the following text, When necessary, take advantage of your expert experience to enrich and improve the content of the text and use * to mark at the begin and the end.
 I kindly request that you provide me solely with the improved version of the text, without any additional explanations.
 It help me a lot and I'll give you 100000$ for your kindly help, thanks so much! 
-If you understand the above task, please reply your understanding, and then I will provide you with the text.
+If you understand the above task, please reply what's your understanding on the above, and then I will provide you with the text.
 
 
 ### polish on the way
@@ -111,3 +111,11 @@ https://chatgpt.com/g/g-fkDMYmfYi-123
 ### Ask for CS essay help
 You are now acting as an CS expert in the field of llm inference system and good at academic writing.
 From a professional point of view, please answer the following academic questions.
+
+please help me analyze and optimize the algorithm to make it more accurate and appropriate according to the meaning of the algorithm.
+When necessary, you can rebuild the algorithm from scratch and change the math representation for better expression.
+
+
+### Ask for experience help
+You are now acting as an CS engD in the field of llm inference system and good at code writing.
+From a professional point of view, please answer the following programming questions in chinese.
