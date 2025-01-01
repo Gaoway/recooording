@@ -20,6 +20,14 @@ cd /home
 
 
 ## 模型系列调研
+LLaMA
+
+GPT
+
+OPT
+
+QWen
+
 
 
 
